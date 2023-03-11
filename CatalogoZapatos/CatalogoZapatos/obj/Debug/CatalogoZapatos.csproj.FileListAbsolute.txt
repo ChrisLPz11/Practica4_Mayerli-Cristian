@@ -1,0 +1,8 @@
+C:\Users\mmaye\Documents\GitHub\Laboratorio1ProgramacionIII\CatalogoZapatos\CatalogoZapatos\obj\Debug\CatalogoZapatos.csproj.AssemblyReference.cache
+C:\Users\mmaye\Documents\GitHub\Laboratorio1ProgramacionIII\CatalogoZapatos\CatalogoZapatos\obj\Debug\CatalogoZapatos.csproj.SuggestedBindingRedirects.cache
+C:\Users\mmaye\Documents\GitHub\Laboratorio1ProgramacionIII\CatalogoZapatos\CatalogoZapatos\obj\Debug\CatalogoZapatos.csproj.CoreCompileInputs.cache
+C:\Users\mmaye\Documents\GitHub\Laboratorio1ProgramacionIII\CatalogoZapatos\CatalogoZapatos\bin\Debug\CatalogoZapatos.exe.config
+C:\Users\mmaye\Documents\GitHub\Laboratorio1ProgramacionIII\CatalogoZapatos\CatalogoZapatos\bin\Debug\CatalogoZapatos.exe
+C:\Users\mmaye\Documents\GitHub\Laboratorio1ProgramacionIII\CatalogoZapatos\CatalogoZapatos\bin\Debug\CatalogoZapatos.pdb
+C:\Users\mmaye\Documents\GitHub\Laboratorio1ProgramacionIII\CatalogoZapatos\CatalogoZapatos\obj\Debug\CatalogoZapatos.exe
+C:\Users\mmaye\Documents\GitHub\Laboratorio1ProgramacionIII\CatalogoZapatos\CatalogoZapatos\obj\Debug\CatalogoZapatos.pdb
