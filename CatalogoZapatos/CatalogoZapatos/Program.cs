@@ -90,36 +90,36 @@ namespace CatalogoZapatos
                 Console.WriteLine(" ____________________________  Menu  ____________________________\n");
 
                 Console.WriteLine("1. Tienda Amazon\n");
-                Console.WriteLine("2. Tienda Nike\n");
-                Console.WriteLine("3. Tienda Adidas\n");
-                Console.WriteLine("4. Tienda Puma\n");
-                Console.WriteLine("5. Salir\n");
+                Console.WriteLine("2. Tiendas de zapatos deportivos\n");
+                Console.WriteLine("3. Salir\n");
 
-                Console.Write("Seleccione una opción (1-5): ");
+
+                Console.Write("Seleccione una opción (1-3): ");
 
                 Option = Console.ReadLine();
                 switch (Option)
                 {
                     case "1":
-                    Console.Clear();
-                    Console.WriteLine("¡A seleccionado la opcion 1!\n");
-                    Console.WriteLine("*************** Bienvenido al catalogo de Amazon ***************\n");
-                    do 
-                    {
+                        Console.Clear();
+                        Console.WriteLine("¡A seleccionado la opcion 1!\n");
+                        Console.WriteLine("*************** Bienvenido al catalogo de Amazon ***************\n");
+                        do
+                        {
                             Console.WriteLine("Ingrese el tipo de catalogo que quiere visualizar:\n");
                             Console.WriteLine("1." + genero[0] +
                                 "\n2." + genero[1] +
                                 "\n3." + genero[2] +
                                 "\n4.Salir");
-                            Console.Write("Seleccione una opción (1-3): \n");
+                            Console.Write("Seleccione una opción (1-4): \n");
 
                             Option = Console.ReadLine();
                             switch (Option)
                             {
                                 case "1":
-                                    
+
                                     do
                                     {
+                                        Console.Clear();
                                         Console.WriteLine("_____________________________Catalogo para " + genero[0] + "_____________________________\n");
                                         List<string> TiendaAmazon = new List<string>() { "1. Nike Air Max 270 - $120 USD", "2. Adidas Ultraboost 22 - $200 USD", "3. Timberland Earthkeepers Rugged 6 Boot - $160 USD", "4. Clarks Men's Tilden Walk Oxford Shoe - $80 USD",
                                             "5. Skechers Men's Equalizer 2.0 True Balance Sneaker - $50 USD", "6. Crocs Classic Clog - $20 USD", "7. New Balance Men's 990v5 - $100 USD", "8. ASICS Gel-Kayano 27 - $160 USD", "9. Merrell Men's Moab 2 Waterproof Hiking Shoe - $150 USD",
@@ -214,7 +214,7 @@ namespace CatalogoZapatos
                                                 Console.ReadKey();
                                                 break;
                                             case "11":
-                                                
+
                                                 Console.WriteLine("¡Eligio salir! fin de las consultas");
                                                 Console.ReadKey();
                                                 Console.Clear();
@@ -236,6 +236,8 @@ namespace CatalogoZapatos
                                 case "2":
                                     do
                                     {
+                                        Console.Clear();
+
                                         Console.WriteLine("_____________________________Catalogo para " + genero[1] + "_____________________________\n");
                                         List<string> TiendaAmazon = new List<string>() { "1. Nike Air Max Woman - $120 USD", "2. Adidas Ultraboost 21 - $200 USD", "3. Converse Chuck Taylor All Star High Top - $40 USD", "4. Vans Old Skool - $50 USD",
                                             "5. Birkenstock Arizona Sandal - $135 USD", "6. Dr. Martens 1460 - $100 USD", "7. TOMS Classic Alpargata - $25 USD", "8. Skechers Women's D'Lites Memory Foam Lace-up Sneaker - $30 USD", "9. New Balance Women's 990v5 -  $175 USD",
@@ -330,7 +332,7 @@ namespace CatalogoZapatos
                                                 Console.ReadKey();
                                                 break;
                                             case "11":
-                                                
+
                                                 Console.WriteLine("¡Eligio salir! fin de las consultas");
                                                 Console.ReadKey();
                                                 Console.Clear();
@@ -350,6 +352,7 @@ namespace CatalogoZapatos
                                 case "3":
                                     do
                                     {
+                                        Console.Clear();
                                         Console.WriteLine("_____________________________Catalogo para " + genero[2] + "_____________________________\n");
                                         List<string> TiendaAmazon = new List<string>() { "1. Converse Chuck Taylor All Star Low Top - $70 USD", "2. Vans Authentic 2.3 - $65 USD", "3. Nike Air Force 1 '07 - $140 USD", "4. Reebok Classic Leather - $100 USD",
                                             "5. Salir"};
@@ -395,7 +398,7 @@ namespace CatalogoZapatos
                                                 Console.ReadKey();
                                                 break;
 
-                                           
+
                                             case "5":
                                                 Console.WriteLine("¡Eligio salir! fin de las consultas");
                                                 Console.ReadKey();
@@ -426,119 +429,382 @@ namespace CatalogoZapatos
                                     Console.ReadLine();
                                     break;
                             }
-                    }
-                    while(Option != "4");
+                        }
+                        while (Option != "4");
 
                         break;
-                        
-                       
+
                     case "2":
-                        Console.Clear();
-                        Console.WriteLine("*************** Bienvenido al catalogo de Nike ***************\n");
+                        
                         do
-
                         {
-
-                            //lista de zapatos adidas para hombre
-                            Console.WriteLine("_____________________________Catalogo para " + genero[0] + "_____________________________\n");
-                            List<string> TiendaNike = new List<string>() { "1. Nike Air Jordan - $180 USD", "2.Nike_Air_Force_1 - $100 USD", "3.Nike_Air_Max - $140 USD", "4. Nike_Blazer - $80 USD",
-                                            "5. Nike_Cortez - $80 USD", "6.  Nike_Dunk - $120 USD", "7. Nike_Free - $100 USD", "8. Nike Huarache - $70 USD", "9. Nike_Presto - $90 USD",
-                                            "10.Nike_Roshe_Run - $90 USD","11. Salir" };
-                            foreach (string mostrar in TiendaNike)
-                            {
-                                Console.WriteLine(mostrar);
-                            }
-                            Console.Write("Seleccione una opción (1-11): \n");
+                            Console.Clear();
+                            Console.WriteLine(" ____________________________  Menu de zapatos deportivos unisex  ____________________________\n");
+                            Console.WriteLine("1.Nike");
+                            Console.WriteLine("2.Adidas");
+                            Console.WriteLine("3.Puma");
+                            Console.WriteLine("4.Salir");
+                            Console.Write("Seleccione una opción (1-4): ");
 
                             Option = Console.ReadLine();
-
                             switch (Option)
                             {
-
                                 case "1":
-                                    Console.WriteLine("________________________________________Opcion 1________________________________________\n");
-                                    Console.WriteLine($" Marca: {nike_Air_Jordan.marca()} \n Modelo: {nike_Air_Jordan.nombre()} \n Color: {nike_Air_Jordan.color()} \n Talla: {talla[10]} \n Calidad: {calidad[1]} \n Precio: ${nike_Air_Jordan.precio()} \n Descuento: {nike_Air_Jordan.descuento()}");
-                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                    nike_Air_Jordan.pagar();
-                                    Console.ReadKey();
-                                    break;
+                                    Console.Clear();
+                                    Console.WriteLine("*************** Bienvenido al catalogo de Nike ***************\n");
+                                    do
+                                    {
+                                        Console.WriteLine("_____________________________Catalogo de zapatos deportivos_____________________________\n");
+                                        List<string> TiendaNike = new List<string>() { "1. Nike Air Jordan - $180 USD", "2.Nike_Air_Force_1 - $100 USD", "3.Nike_Air_Max - $140 USD", "4. Nike_Blazer - $80 USD",
+                                            "5. Nike_Cortez - $80 USD", "6.  Nike_Dunk - $120 USD", "7. Nike_Free - $100 USD", "8. Nike Huarache - $70 USD", "9. Nike_Presto - $90 USD",
+                                            "10.Nike_Roshe_Run - $90 USD","11. Salir" };
+                                        foreach (string mostrar in TiendaNike)
+                                        {
+                                            Console.WriteLine(mostrar);
+                                        }
+                                        Console.Write("Seleccione una opción (1-11): \n");
 
+                                        Option = Console.ReadLine();
+
+                                        switch (Option)
+                                        {
+
+                                            case "1":
+                                                Console.WriteLine("________________________________________Opcion 1________________________________________\n");
+                                                Console.WriteLine($" Marca: {nike_Air_Jordan.marca()} \n Modelo: {nike_Air_Jordan.nombre()} \n Color: {nike_Air_Jordan.color()} \n Talla: {talla[10]} \n Calidad: {calidad[1]} \n Precio: ${nike_Air_Jordan.precio()} \n Descuento: {nike_Air_Jordan.descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                nike_Air_Jordan.pagar();
+                                                Console.ReadKey();
+                                                break;
+
+                                            case "2":
+                                                Console.WriteLine("________________________________________Opcion 2________________________________________\n");
+                                                Console.WriteLine($" Marca: {nike_Air_Force_1.marca()} \n Modelo: {nike_Air_Force_1.nombre()} \n Color: {nike_Air_Force_1.color()} \n Talla: {talla[9]} \n Calidad: {calidad[1]} \n Precio: ${nike_Air_Force_1.precio()} \n Descuento: {nike_Air_Force_1.descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                nike_Air_Force_1.pagar();
+                                                Console.ReadKey();
+                                                break;
+
+                                            case "3":
+                                                Console.WriteLine("________________________________________Opcion 3________________________________________\n");
+                                                Console.WriteLine($" Marca: {nike_Air_Max.marca()} \n Modelo: {nike_Air_Max.nombre()} \n Color: {nike_Air_Max.color()} \n Talla: {talla[11]} \n Calidad: {calidad[1]} \n Precio: ${nike_Air_Max.precio()} \n Descuento: {nike_Air_Max.descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                nike_Air_Max.pagar();
+                                                Console.ReadKey();
+                                                break;
+                                            case "4":
+                                                Console.WriteLine("________________________________________Opcion 4________________________________________\n");
+                                                Console.WriteLine($" Marca: {nike_Blazer.marca()} \n Modelo: {nike_Blazer.nombre()} \n Color: {nike_Blazer.color()} \n Talla: {talla[10]} \n Calidad: {calidad[1]} \n Precio: ${nike_Blazer.precio()} \n Descuento: {nike_Blazer.descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                nike_Blazer.pagar();
+                                                Console.ReadKey();
+                                                break;
+
+                                            case "5":
+                                                Console.WriteLine("________________________________________Opcion 5________________________________________\n");
+                                                Console.WriteLine($" Marca: {nike_Cortez.marca()} \n Modelo: {nike_Cortez.nombre()} \n Color: {nike_Cortez.color()} \n Talla: {talla[11]} \n Calidad: {calidad[1]} \n Precio: ${nike_Cortez.precio()} \n Descuento: {nike_Cortez.descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                nike_Cortez.pagar();
+                                                Console.ReadKey();
+                                                break;
+
+                                            case "6":
+                                                Console.WriteLine("________________________________________Opcion 6________________________________________\n");
+                                                Console.WriteLine($" Marca: {nike_Dunk.marca()} \n Modelo: {nike_Dunk.nombre()} \n Color: {nike_Dunk.color()} \n Talla: {talla[9]} \n Calidad: {calidad[1]} \n Precio: ${nike_Dunk.precio()} \n Descuento: {nike_Dunk.descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                nike_Dunk.pagar();
+                                                Console.ReadKey();
+                                                break;
+
+                                            case "7":
+                                                Console.WriteLine("________________________________________Opcion 7________________________________________\n");
+                                                Console.WriteLine($" Marca: {nike_Free.marca()} \n Modelo: {nike_Free.nombre()} \n Color: {nike_Free.color()} \n Talla: {talla[9]} \n Calidad: {calidad[1]} \n Precio: ${nike_Free.precio()} \n Descuento: {nike_Free.descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                nike_Free.pagar();
+                                                Console.ReadKey();
+                                                break;
+
+                                            case "8":
+                                                Console.WriteLine("________________________________________Opcion 8________________________________________\n");
+                                                Console.WriteLine($" Marca: {nike_Huarache.marca()} \n Modelo: {nike_Huarache.nombre()} \n Color: {nike_Huarache.color()} \n Talla: {talla[9]} \n Calidad: {calidad[1]} \n Precio: ${nike_Huarache.precio()} \n Descuento: {nike_Huarache.descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                nike_Huarache.pagar();
+                                                Console.ReadKey();
+                                                break;
+
+                                            case "9":
+                                                Console.WriteLine("________________________________________Opcion 9________________________________________\n");
+                                                Console.WriteLine($" Marca: {nike_Presto.marca()} \n Modelo: {nike_Presto.nombre()} \n Color: {nike_Presto.color()} \n Talla: {talla[10]} \n Calidad: {calidad[1]} \n Precio: ${nike_Presto.precio()} \n Descuento: {nike_Presto.descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                nike_Presto.pagar();
+                                                Console.ReadKey();
+                                                break;
+
+                                            case "10":
+                                                Console.WriteLine("________________________________________Opcion 10________________________________________\n");
+                                                Console.WriteLine($" Marca: {nike_Roshe_Run.marca()} \n Modelo: {nike_Presto.nombre()} \n Color: {nike_Presto.color()} \n Talla: {talla[11]} \n Calidad: {calidad[1]} \n Precio: ${nike_Presto.precio()} \n Descuento: {nike_Presto.descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                nike_Presto.pagar();
+                                                Console.ReadKey();
+                                                break;
+
+                                            case "11":
+
+                                                Console.WriteLine("¡Eligio salir! fin de las consultas");
+                                                Console.ReadKey();
+
+                                                break;
+
+                                            default:
+                                                Console.ForegroundColor = ConsoleColor.Red;
+                                                Console.WriteLine("Opción inválida");
+                                                Console.ReadLine();
+                                                Console.Clear();
+                                                break;
+                                        }
+
+                                    }
+                                    while (Option != "11");
+                                    
+                                    break;
                                 case "2":
-                                    Console.WriteLine("________________________________________Opcion 2________________________________________\n");
-                                    Console.WriteLine($" Marca: {nike_Air_Force_1.marca()} \n Modelo: {nike_Air_Force_1.nombre()} \n Color: {nike_Air_Force_1.color()} \n Talla: {talla[9]} \n Calidad: {calidad[1]} \n Precio: ${nike_Air_Force_1.precio()} \n Descuento: {nike_Air_Force_1.descuento()}");
-                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                    nike_Air_Force_1.pagar();
-                                    Console.ReadKey();
-                                    break;
+                                    Console.Clear();
+                                    Console.WriteLine("*************** Bienvenido al catalogo de Adidas ***************\n");
+                                    do
+                                    {
+                                        Console.WriteLine("_____________________________Catalogo de zapatos deportivos_____________________________\n");
+                                        List<string> TiendaPuma = new List<string>() { "1. Adidas Ultraboost 2 - $180 USD", "2.Adidas Originals Superstar - $80 USD", "3. Adidas NMD_R1 - $140 USD", "4. Adidas Stan Smith - $75 USD",
+                                            "5. Adidas Solar Glide ST 3 - $140 USD", "6. Adidas Harden Vol. 5 - $130 USD", "7. Adidas Terrex Free Hiker - $200 USD", "8. Adidas Adizero Adios Pro 2 - $200 USD", "9. Adidas Gazelle - $80 USD",
+                                            "10. Adidas Yeezy Boost 350 V2 - $220 USD","11. Salir" };
+                                        foreach (string mostrar in TiendaPuma)
+                                        {
+                                            Console.WriteLine(mostrar);
+                                        }
+                                        Console.Write("Seleccione una opción (1-11): \n");
 
+                                        Option = Console.ReadLine();
+
+                                        switch (Option)
+                                        {
+
+                                            case "1":
+                                                Console.WriteLine("________________________________________Opcion 1________________________________________\n");
+                                                Console.WriteLine($" Marca: {adidasUltraboost2.Marca()} \n Modelo: {adidasUltraboost2.Nombre()} \n Color: {adidasUltraboost2.Color()} \n Talla: {talla[10]} \n Calidad: {calidad[1]} \n Precio: ${adidasUltraboost2.Precio()} \n Descuento: {adidasUltraboost2.Descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                adidasUltraboost2.Pagar();
+                                                Console.ReadKey();
+                                                break;
+
+                                            case "2":
+                                                Console.WriteLine("________________________________________Opcion 2________________________________________\n");
+                                                Console.WriteLine($" Marca: {adidasHardenVol_5.Marca()} \n Modelo: {adidasHardenVol_5.Nombre()} \n Color: {adidasHardenVol_5.Color()} \n Talla: {talla[9]} \n Calidad: {calidad[1]} \n Precio: ${adidasHardenVol_5.Precio()} \n Descuento: {adidasHardenVol_5.Descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                adidasHardenVol_5.Pagar();
+                                                Console.ReadKey();
+                                                break;
+
+                                            case "3":
+                                                Console.WriteLine("________________________________________Opcion 3________________________________________\n");
+                                                Console.WriteLine($" Marca: {adidasAdizeroAdiosPro_2.Marca()} \n Modelo: {adidasAdizeroAdiosPro_2.Nombre()} \n Color: {adidasAdizeroAdiosPro_2.Color()} \n Talla: {talla[11]} \n Calidad: {calidad[1]} \n Precio: ${adidasAdizeroAdiosPro_2.Precio()} \n Descuento: {adidasAdizeroAdiosPro_2.Descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                adidasAdizeroAdiosPro_2.Pagar();
+                                                Console.ReadKey();
+                                                break;
+                                            case "4":
+                                                Console.WriteLine("________________________________________Opcion 4________________________________________\n");
+                                                Console.WriteLine($" Marca: {adidasOriginals_Superstar.Marca()} \n Modelo: {adidasOriginals_Superstar.Nombre()} \n Color: {adidasOriginals_Superstar.Color()} \n Talla: {talla[10]} \n Calidad: {calidad[1]} \n Precio: ${adidasOriginals_Superstar.Precio()} \n Descuento: {adidasOriginals_Superstar.Descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                adidasOriginals_Superstar.Pagar();
+                                                Console.ReadKey();
+                                                break;
+
+                                            case "5":
+                                                Console.WriteLine("________________________________________Opcion 5________________________________________\n");
+                                                Console.WriteLine($" Marca: {adidasSolarGlideST3.Marca()} \n Modelo: {adidasSolarGlideST3.Nombre()} \n Color: {adidasSolarGlideST3.Color()} \n Talla: {talla[11]} \n Calidad: {calidad[1]} \n Precio: ${adidasSolarGlideST3.Precio()} \n Descuento: {adidasSolarGlideST3.Descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                adidasSolarGlideST3.Pagar();
+                                                Console.ReadKey();
+                                                break;
+
+                                            case "6":
+                                                Console.WriteLine("________________________________________Opcion 6________________________________________\n");
+                                                Console.WriteLine($" Marca: {adidasTerrexFreeHiker.Marca()} \n Modelo: {adidasTerrexFreeHiker.Nombre()} \n Color: {adidasTerrexFreeHiker.Color()} \n Talla: {talla[9]} \n Calidad: {calidad[1]} \n Precio: ${adidasTerrexFreeHiker.Precio()} \n Descuento: {adidasTerrexFreeHiker.Descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                adidasTerrexFreeHiker.Pagar();
+                                                Console.ReadKey();
+                                                break;
+
+                                            case "7":
+                                                Console.WriteLine("________________________________________Opcion 7________________________________________\n");
+                                                Console.WriteLine($" Marca: {adidas_Gazelle.Marca()} \n Modelo: {adidas_Gazelle.Nombre()} \n Color: {adidas_Gazelle.Color()} \n Talla: {talla[9]} \n Calidad: {calidad[1]} \n Precio: ${adidas_Gazelle.Precio()} \n Descuento: {adidas_Gazelle.Descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                adidas_Gazelle.Pagar();
+                                                Console.ReadKey();
+                                                break;
+
+                                            case "8":
+                                                Console.WriteLine("________________________________________Opcion 8________________________________________\n");
+                                                Console.WriteLine($" Marca: {adidas_NMD_R1.Marca()} \n Modelo: {adidas_NMD_R1.Nombre()} \n Color: {adidas_NMD_R1.Color()} \n Talla: {talla[9]} \n Calidad: {calidad[1]} \n Precio: ${adidas_NMD_R1.Precio()} \n Descuento: {adidas_NMD_R1.Descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                adidas_NMD_R1.Pagar();
+                                                Console.ReadKey();
+                                                break;
+
+                                            case "9":
+                                                Console.WriteLine("________________________________________Opcion 9________________________________________\n");
+                                                Console.WriteLine($" Marca: {adidas_Stan_Smith.Marca()} \n Modelo: {adidas_Stan_Smith.Nombre()} \n Color: {adidas_Stan_Smith.Color()} \n Talla: {talla[10]} \n Calidad: {calidad[1]} \n Precio: ${adidas_Stan_Smith.Precio()} \n Descuento: {adidas_Stan_Smith.Descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                adidas_Stan_Smith.Pagar();
+                                                Console.ReadKey();
+                                                break;
+
+                                            case "10":
+                                                Console.WriteLine("________________________________________Opcion 10________________________________________\n");
+                                                Console.WriteLine($" Marca: {adidas_Yeezy_Boost_350_V2.Marca()} \n Modelo: {adidas_Yeezy_Boost_350_V2.Nombre()} \n Color: {adidas_Yeezy_Boost_350_V2.Color()} \n Talla: {talla[11]} \n Calidad: {calidad[1]} \n Precio: ${adidas_Yeezy_Boost_350_V2.Precio()} \n Descuento: {adidas_Yeezy_Boost_350_V2.Descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                adidas_Yeezy_Boost_350_V2.Pagar();
+                                                Console.ReadKey();
+                                                break;
+
+                                            case "11":
+
+                                                Console.WriteLine("¡Eligio salir! fin de las consultas");
+                                                Console.ReadKey();
+
+                                                break;
+
+                                            default:
+                                                Console.ForegroundColor = ConsoleColor.Red;
+                                                Console.WriteLine("Opción inválida");
+                                                Console.ReadLine();
+                                                Console.Clear();
+                                                break;
+                                        }
+
+                                    }
+                                    while (Option != "11");
+                                    break;
                                 case "3":
-                                    Console.WriteLine("________________________________________Opcion 3________________________________________\n");
-                                    Console.WriteLine($" Marca: {nike_Air_Max.marca()} \n Modelo: {nike_Air_Max.nombre()} \n Color: {nike_Air_Max.color()} \n Talla: {talla[11]} \n Calidad: {calidad[1]} \n Precio: ${nike_Air_Max.precio()} \n Descuento: {nike_Air_Max.descuento()}");
-                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                    nike_Air_Max.pagar();
-                                    Console.ReadKey();
+                                    Console.Clear();
+                                    Console.WriteLine("*************** Bienvenido al catalogo de Puma ***************\n");
+                                    do
+                                    {
+                                        Console.WriteLine("_____________________________Catalogo de zapatos deportivos_____________________________\n");
+                                        List<string> TiendaAdidas = new List<string>() { "1. Puma Calibrate Runne - $180 USD", "2. Puma RS-X Cubed - $80 USD", "3. Puma Future Rider - $110 USD", "4. Puma Suede Classic - $95 USD",
+                                            "5. Puma Ralph Sampson - $80 USD", "6.  Puma_Sky_Modern - $100 USD", "7. Puma Mirage Sport - $100 USD", "8. Puma Cali Sport - $70 USD", "9. Puma Enzo 2 - $80 USD",
+                                            "10. Puma Anzarun Lite - $90 USD","11. Salir"};
+                                        foreach (string mostrar in TiendaAdidas)
+                                        {
+                                            Console.WriteLine(mostrar);
+                                        }
+                                        Console.Write("Seleccione una opción (1-11): \n");
+
+                                        Option = Console.ReadLine();
+
+                                        switch (Option)
+                                        {
+
+                                            case "1":
+                                                Console.WriteLine("________________________________________Opcion 1________________________________________\n");
+                                                Console.WriteLine($" Marca: {puma_Calibrate_Runne.Marca()} \n Modelo: {puma_Calibrate_Runne.Nombre()} \n Color: {puma_Calibrate_Runne.Color()} \n Talla: {talla[8]} \n Calidad: {calidad[1]} \n Precio: ${puma_Calibrate_Runne.Precio()} \n Descuento: {puma_Calibrate_Runne.Descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                puma_Calibrate_Runne.Pagar();
+                                                Console.ReadKey();
+                                                break;
+
+                                            case "2":
+                                                Console.WriteLine("________________________________________Opcion 2________________________________________\n");
+                                                Console.WriteLine($" Marca: {pumaRS_XCubed.Marca()} \n Modelo: {pumaRS_XCubed.Nombre()} \n Color: {pumaRS_XCubed.Color()} \n Talla: {talla[7]} \n Calidad: {calidad[4]} \n Precio: ${pumaRS_XCubed.Precio()} \n Descuento: {pumaRS_XCubed.Descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                pumaRS_XCubed.Pagar();
+                                                Console.ReadKey();
+                                                break;
+
+                                            case "3":
+                                                Console.WriteLine("________________________________________Opcion 3________________________________________\n");
+                                                Console.WriteLine($" Marca: {puma_Future_Rider.Marca()} \n Modelo: {puma_Future_Rider.Nombre()} \n Color: {puma_Future_Rider.Color()} \n Talla: {talla[8]} \n Calidad: {calidad[3]} \n Precio: ${puma_Future_Rider.Precio()} \n Descuento: {puma_Future_Rider.Descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                puma_Future_Rider.Pagar();
+                                                Console.ReadKey();
+                                                break;
+                                            case "4":
+                                                Console.WriteLine("________________________________________Opcion 4________________________________________\n");
+                                                Console.WriteLine($" Marca: {puma_Suede_Classic.Marca()} \n Modelo: {puma_Suede_Classic.Nombre()} \n Color: {puma_Suede_Classic.Color()} \n Talla: {talla[9]} \n Calidad: {calidad[4]} \n Precio: ${puma_Suede_Classic.Precio()} \n Descuento: {puma_Suede_Classic.Descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                puma_Suede_Classic.Pagar();
+                                                Console.ReadKey();
+                                                break;
+
+                                            case "5":
+                                                Console.WriteLine("________________________________________Opcion 5________________________________________\n");
+                                                Console.WriteLine($" Marca: {puma_Ralph_Sampson.Marca()} \n Modelo: {puma_Ralph_Sampson.Nombre()} \n Color: {puma_Ralph_Sampson.Color()} \n Talla: {talla[6]} \n Calidad: {calidad[3]} \n Precio: ${puma_Ralph_Sampson.Precio()} \n Descuento: {puma_Ralph_Sampson.Descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                puma_Ralph_Sampson.Pagar();
+                                                Console.ReadKey();
+                                                break;
+
+                                            case "6":
+                                                Console.WriteLine("________________________________________Opcion 6________________________________________\n");
+                                                Console.WriteLine($" Marca: {puma_Sky_Modern.Marca()} \n Modelo: {puma_Sky_Modern.Nombre()} \n Color: {puma_Sky_Modern.Color()} \n Talla: {talla[6]} \n Calidad: {calidad[1]} \n Precio: ${puma_Sky_Modern.Precio()} \n Descuento: {puma_Sky_Modern.Descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                puma_Sky_Modern.Pagar();
+                                                Console.ReadKey();
+                                                break;
+
+                                            case "7":
+                                                Console.WriteLine("________________________________________Opcion 7________________________________________\n");
+                                                Console.WriteLine($" Marca: {pumaMirageSport.Marca()} \n Modelo: {pumaMirageSport.Nombre()} \n Color: {pumaMirageSport.Color()} \n Talla: {talla[6]} \n Calidad: {calidad[4]} \n Precio: ${pumaMirageSport.Precio()} \n Descuento: {pumaMirageSport.Descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                pumaMirageSport.Pagar();
+                                                Console.ReadKey();
+                                                break;
+
+                                            case "8":
+                                                Console.WriteLine("________________________________________Opcion 8________________________________________\n");
+                                                Console.WriteLine($" Marca: {pumaCaliSport.Marca()} \n Modelo: {pumaCaliSport.Nombre()} \n Color: {pumaCaliSport.Color()} \n Talla: {talla[7]} \n Calidad: {calidad[2]} \n Precio: ${pumaCaliSport.Precio()} \n Descuento: {pumaCaliSport.Descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                pumaCaliSport.Pagar();
+                                                Console.ReadKey();
+                                                break;
+
+                                            case "9":
+                                                Console.WriteLine("________________________________________Opcion 9________________________________________\n");
+                                                Console.WriteLine($" Marca: {puma_Enzo_2.Marca()} \n Modelo: {puma_Enzo_2.Nombre()} \n Color: {puma_Enzo_2.Color()} \n Talla: {talla[7]} \n Calidad: {calidad[3]} \n Precio: ${puma_Enzo_2.Precio()} \n Descuento: {puma_Enzo_2.Descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                puma_Enzo_2.Pagar();
+                                                Console.ReadKey();
+                                                break;
+
+                                            case "10":
+                                                Console.WriteLine("________________________________________Opcion 10________________________________________\n");
+                                                Console.WriteLine($" Marca: {pumaAnzarunLite.Marca()} \n Modelo: {pumaAnzarunLite.Nombre()} \n Color: {pumaAnzarunLite.Color()} \n Talla: {talla[8]} \n Calidad: {calidad[1]} \n Precio: ${pumaAnzarunLite.Precio()} \n Descuento: {pumaAnzarunLite.Descuento()}");
+                                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                                pumaAnzarunLite.Pagar();
+                                                Console.ReadKey();
+                                                break;
+
+                                            case "11":
+
+                                                Console.WriteLine("¡Eligio salir! fin de las consultas");
+                                                Console.ReadKey();
+
+                                                break;
+
+                                            default:
+                                                ;
+                                                Console.WriteLine("Opción inválida");
+                                                Console.ReadLine();
+                                                Console.Clear();
+                                                break;
+                                        }
+
+                                    }
+                                    while (Option != "11");
                                     break;
                                 case "4":
-                                    Console.WriteLine("________________________________________Opcion 4________________________________________\n");
-                                    Console.WriteLine($" Marca: {nike_Blazer.marca()} \n Modelo: {nike_Blazer.nombre()} \n Color: {nike_Blazer.color()} \n Talla: {talla[10]} \n Calidad: {calidad[1]} \n Precio: ${nike_Blazer.precio()} \n Descuento: {nike_Blazer.descuento()}");
-                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                    nike_Blazer.pagar();
-                                    Console.ReadKey();
-                                    break;
-
-                                case "5":
-                                    Console.WriteLine("________________________________________Opcion 5________________________________________\n");
-                                    Console.WriteLine($" Marca: {nike_Cortez.marca()} \n Modelo: {nike_Cortez.nombre()} \n Color: {nike_Cortez.color()} \n Talla: {talla[11]} \n Calidad: {calidad[1]} \n Precio: ${nike_Cortez.precio()} \n Descuento: {nike_Cortez.descuento()}");
-                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                    nike_Cortez.pagar();
-                                    Console.ReadKey();
-                                    break;
-
-                                case "6":
-                                    Console.WriteLine("________________________________________Opcion 6________________________________________\n");
-                                    Console.WriteLine($" Marca: {nike_Dunk.marca()} \n Modelo: {nike_Dunk.nombre()} \n Color: {nike_Dunk.color()} \n Talla: {talla[9]} \n Calidad: {calidad[1]} \n Precio: ${nike_Dunk.precio()} \n Descuento: {nike_Dunk.descuento()}");
-                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                    nike_Dunk.pagar();
-                                    Console.ReadKey();
-                                    break;
-
-                                case "7":
-                                    Console.WriteLine("________________________________________Opcion 7________________________________________\n");
-                                    Console.WriteLine($" Marca: {nike_Free.marca()} \n Modelo: {nike_Free.nombre()} \n Color: {nike_Free.color()} \n Talla: {talla[9]} \n Calidad: {calidad[1]} \n Precio: ${nike_Free.precio()} \n Descuento: {nike_Free.descuento()}");
-                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                    nike_Free.pagar();
-                                    Console.ReadKey();
-                                    break;
-
-                                case "8":
-                                    Console.WriteLine("________________________________________Opcion 8________________________________________\n");
-                                    Console.WriteLine($" Marca: {nike_Huarache.marca()} \n Modelo: {nike_Huarache.nombre()} \n Color: {nike_Huarache.color()} \n Talla: {talla[9]} \n Calidad: {calidad[1]} \n Precio: ${nike_Huarache.precio()} \n Descuento: {nike_Huarache.descuento()}");
-                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                    nike_Huarache.pagar();
-                                    Console.ReadKey();
-                                    break;
-
-                                case "9":
-                                    Console.WriteLine("________________________________________Opcion 9________________________________________\n");
-                                    Console.WriteLine($" Marca: {nike_Presto.marca()} \n Modelo: {nike_Presto.nombre()} \n Color: {nike_Presto.color()} \n Talla: {talla[10]} \n Calidad: {calidad[1]} \n Precio: ${nike_Presto.precio()} \n Descuento: {nike_Presto.descuento()}");
-                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                    nike_Presto.pagar();
-                                    Console.ReadKey();
-                                    break;
-
-                                case "10":
-                                    Console.WriteLine("________________________________________Opcion 10________________________________________\n");
-                                    Console.WriteLine($" Marca: {nike_Roshe_Run.marca()} \n Modelo: {nike_Presto.nombre()} \n Color: {nike_Presto.color()} \n Talla: {talla[11]} \n Calidad: {calidad[1]} \n Precio: ${nike_Presto.precio()} \n Descuento: {nike_Presto.descuento()}");
-                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                    nike_Presto.pagar();
-                                    Console.ReadKey();
-                                    break;
-
-                                case "11":
-
+                                    Console.ForegroundColor = ConsoleColor.Green;
                                     Console.WriteLine("¡Eligio salir! fin de las consultas");
                                     Console.ReadKey();
-                                    Console.Clear();
                                     break;
 
                                 default:
@@ -550,260 +816,16 @@ namespace CatalogoZapatos
                             }
 
                         }
-                        while (Option != "11");
+                        while(Option != "4");
                         break;
 
 
                     case "3":
-
-                        Console.Clear();
-                        Console.WriteLine("*************** Bienvenido al catalogo de Adidas ***************\n");
-                        do
-
-                        {
-
-                            //lista de zapatos adidas para hombre
-                            Console.WriteLine("_____________________________Catalogo para " + genero[0] + "_____________________________\n");
-                        List<string> TiendaPuma = new List<string>() { "1. Adidas Ultraboost 2 - $180 USD", "2.Adidas Originals Superstar - $80 USD", "3. Adidas NMD_R1 - $140 USD", "4. Adidas Stan Smith - $75 USD",
-                                            "5. Adidas Solar Glide ST 3 - $140 USD", "6. Adidas Harden Vol. 5 - $130 USD", "7. Adidas Terrex Free Hiker - $200 USD", "8. Adidas Adizero Adios Pro 2 - $200 USD", "9. Adidas Gazelle - $80 USD",
-                                            "10. Adidas Yeezy Boost 350 V2 - $220 USD","11. Salir" };
-                        foreach (string mostrar in TiendaPuma)
-                        {
-                            Console.WriteLine(mostrar);
-                        }
-                        Console.Write("Seleccione una opción (1-11): \n");
-
-                        Option = Console.ReadLine();
-
-                        switch (Option)
-                        {
-                          
-                            case "1":
-                                Console.WriteLine("________________________________________Opcion 1________________________________________\n");
-                                Console.WriteLine($" Marca: {adidasUltraboost2.Marca()} \n Modelo: {adidasUltraboost2.Nombre()} \n Color: {adidasUltraboost2.Color()} \n Talla: {talla[10]} \n Calidad: {calidad[1]} \n Precio: ${adidasUltraboost2.Precio()} \n Descuento: {adidasUltraboost2.Descuento()}");
-                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                adidasUltraboost2.Pagar();
-                                Console.ReadKey();
-                                break;
-
-                            case "2":
-                                Console.WriteLine("________________________________________Opcion 2________________________________________\n");
-                                Console.WriteLine($" Marca: {adidasHardenVol_5.Marca()} \n Modelo: {adidasHardenVol_5.Nombre()} \n Color: {adidasHardenVol_5.Color()} \n Talla: {talla[9]} \n Calidad: {calidad[1]} \n Precio: ${adidasHardenVol_5.Precio()} \n Descuento: {adidasHardenVol_5.Descuento()}");
-                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                adidasHardenVol_5.Pagar();
-                                Console.ReadKey();
-                                break;
-
-                            case "3":
-                                Console.WriteLine("________________________________________Opcion 3________________________________________\n");
-                                Console.WriteLine($" Marca: {adidasAdizeroAdiosPro_2.Marca()} \n Modelo: {adidasAdizeroAdiosPro_2.Nombre()} \n Color: {adidasAdizeroAdiosPro_2.Color()} \n Talla: {talla[11]} \n Calidad: {calidad[1]} \n Precio: ${adidasAdizeroAdiosPro_2.Precio()} \n Descuento: {adidasAdizeroAdiosPro_2.Descuento()}");
-                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                adidasAdizeroAdiosPro_2.Pagar();
-                                Console.ReadKey();
-                                break;
-                            case "4":
-                                Console.WriteLine("________________________________________Opcion 4________________________________________\n");
-                                Console.WriteLine($" Marca: {adidasOriginals_Superstar.Marca()} \n Modelo: {adidasOriginals_Superstar.Nombre()} \n Color: {adidasOriginals_Superstar.Color()} \n Talla: {talla[10]} \n Calidad: {calidad[1]} \n Precio: ${adidasOriginals_Superstar.Precio()} \n Descuento: {adidasOriginals_Superstar.Descuento()}");
-                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                adidasOriginals_Superstar.Pagar();
-                                Console.ReadKey();
-                                break;
-
-                            case "5":
-                                Console.WriteLine("________________________________________Opcion 5________________________________________\n");
-                                Console.WriteLine($" Marca: {adidasSolarGlideST3.Marca()} \n Modelo: {adidasSolarGlideST3.Nombre()} \n Color: {adidasSolarGlideST3.Color()} \n Talla: {talla[11]} \n Calidad: {calidad[1]} \n Precio: ${adidasSolarGlideST3.Precio()} \n Descuento: {adidasSolarGlideST3.Descuento()}");
-                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                adidasSolarGlideST3.Pagar();
-                                Console.ReadKey();
-                                break;
-
-                            case "6":
-                                Console.WriteLine("________________________________________Opcion 6________________________________________\n");
-                                Console.WriteLine($" Marca: {adidasTerrexFreeHiker.Marca()} \n Modelo: {adidasTerrexFreeHiker.Nombre()} \n Color: {adidasTerrexFreeHiker.Color()} \n Talla: {talla[9]} \n Calidad: {calidad[1]} \n Precio: ${adidasTerrexFreeHiker.Precio()} \n Descuento: {adidasTerrexFreeHiker.Descuento()}");
-                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                adidasTerrexFreeHiker.Pagar();
-                                Console.ReadKey();
-                                break;
-
-                            case "7":
-                                Console.WriteLine("________________________________________Opcion 7________________________________________\n");
-                                Console.WriteLine($" Marca: {adidas_Gazelle.Marca()} \n Modelo: {adidas_Gazelle.Nombre()} \n Color: {adidas_Gazelle.Color()} \n Talla: {talla[9]} \n Calidad: {calidad[1]} \n Precio: ${adidas_Gazelle.Precio()} \n Descuento: {adidas_Gazelle.Descuento()}");
-                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                adidas_Gazelle.Pagar();
-                                Console.ReadKey();
-                                break;
-
-                            case "8":
-                                Console.WriteLine("________________________________________Opcion 8________________________________________\n");
-                                Console.WriteLine($" Marca: {adidas_NMD_R1.Marca()} \n Modelo: {adidas_NMD_R1.Nombre()} \n Color: {adidas_NMD_R1.Color()} \n Talla: {talla[9]} \n Calidad: {calidad[1]} \n Precio: ${adidas_NMD_R1.Precio()} \n Descuento: {adidas_NMD_R1.Descuento()}");
-                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                adidas_NMD_R1.Pagar();
-                                Console.ReadKey();
-                                break;
-
-                            case "9":
-                                Console.WriteLine("________________________________________Opcion 9________________________________________\n");
-                                Console.WriteLine($" Marca: {adidas_Stan_Smith.Marca()} \n Modelo: {adidas_Stan_Smith.Nombre()} \n Color: {adidas_Stan_Smith.Color()} \n Talla: {talla[10]} \n Calidad: {calidad[1]} \n Precio: ${adidas_Stan_Smith.Precio()} \n Descuento: {adidas_Stan_Smith.Descuento()}");
-                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                adidas_Stan_Smith.Pagar();
-                                Console.ReadKey();
-                                break;
-
-                            case "10":
-                                Console.WriteLine("________________________________________Opcion 10________________________________________\n");
-                                Console.WriteLine($" Marca: {adidas_Yeezy_Boost_350_V2.Marca()} \n Modelo: {adidas_Yeezy_Boost_350_V2.Nombre()} \n Color: {adidas_Yeezy_Boost_350_V2.Color()} \n Talla: {talla[11]} \n Calidad: {calidad[1]} \n Precio: ${adidas_Yeezy_Boost_350_V2.Precio()} \n Descuento: {adidas_Yeezy_Boost_350_V2.Descuento()}");
-                                Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                adidas_Yeezy_Boost_350_V2.Pagar();
-                                Console.ReadKey();
-                                break;
-
-                                case "11":
-
-                                    Console.WriteLine("¡Eligio salir! fin de las consultas");
-                                    Console.ReadKey();
-                                    Console.Clear();
-                                    break;
-
-                                default:
-                                Console.ForegroundColor = ConsoleColor.Red;
-                                Console.WriteLine("Opción inválida");
-                                Console.ReadLine();
-                                Console.Clear();
-                                break;
-                        }
-
-                }
-                while (Option != "11") ;
-                break;
-            
-
-                    case "4":
-                        Console.Clear();
-                        Console.WriteLine("*************** Bienvenido al catalogo de Puma ***************\n");
-                        do
-
-                        {
-
-                            //lista de zapatos Pumas para Mujer
-                            Console.WriteLine("_____________________________Catalogo para " + genero[1] + "_____________________________\n");
-                            List<string> TiendaAdidas = new List<string>() { "1. Puma Calibrate Runne - $180 USD", "2. Puma RS-X Cubed - $80 USD", "3. Puma Future Rider - $110 USD", "4. Puma Suede Classic - $95 USD",
-                                            "5. Puma Ralph Sampson - $80 USD", "6.  Puma_Sky_Modern - $100 USD", "7. Puma Mirage Sport - $100 USD", "8. Puma Cali Sport - $70 USD", "9. Puma Enzo 2 - $80 USD",
-                                            "10. Puma Anzarun Lite - $90 USD","11. Salir"};
-                            foreach (string mostrar in TiendaAdidas)
-                            {
-                                Console.WriteLine(mostrar);
-                            }
-                            Console.Write("Seleccione una opción (1-11): \n");
-
-                            Option = Console.ReadLine();
-
-                            switch (Option)
-                            {
-
-                                case "1":
-                                    Console.WriteLine("________________________________________Opcion 1________________________________________\n");
-                                    Console.WriteLine($" Marca: {puma_Calibrate_Runne.Marca()} \n Modelo: {puma_Calibrate_Runne.Nombre()} \n Color: {puma_Calibrate_Runne.Color()} \n Talla: {talla[8]} \n Calidad: {calidad[1]} \n Precio: ${puma_Calibrate_Runne.Precio()} \n Descuento: {puma_Calibrate_Runne.Descuento()}");
-                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                    puma_Calibrate_Runne.Pagar();
-                                    Console.ReadKey();
-                                    break;
-
-                                case "2":
-                                    Console.WriteLine("________________________________________Opcion 2________________________________________\n");
-                                    Console.WriteLine($" Marca: {pumaRS_XCubed.Marca()} \n Modelo: {pumaRS_XCubed.Nombre()} \n Color: {pumaRS_XCubed.Color()} \n Talla: {talla[7]} \n Calidad: {calidad[4]} \n Precio: ${pumaRS_XCubed.Precio()} \n Descuento: {pumaRS_XCubed.Descuento()}");
-                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                    pumaRS_XCubed.Pagar();
-                                    Console.ReadKey();
-                                    break;
-
-                                case "3":
-                                    Console.WriteLine("________________________________________Opcion 3________________________________________\n");
-                                    Console.WriteLine($" Marca: {puma_Future_Rider.Marca()} \n Modelo: {puma_Future_Rider.Nombre()} \n Color: {puma_Future_Rider.Color()} \n Talla: {talla[8]} \n Calidad: {calidad[3]} \n Precio: ${puma_Future_Rider.Precio()} \n Descuento: {puma_Future_Rider.Descuento()}");
-                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                    puma_Future_Rider.Pagar();
-                                    Console.ReadKey();
-                                    break;
-                                case "4":
-                                    Console.WriteLine("________________________________________Opcion 4________________________________________\n");
-                                    Console.WriteLine($" Marca: {puma_Suede_Classic.Marca()} \n Modelo: {puma_Suede_Classic.Nombre()} \n Color: {puma_Suede_Classic.Color()} \n Talla: {talla[9]} \n Calidad: {calidad[4]} \n Precio: ${puma_Suede_Classic.Precio()} \n Descuento: {puma_Suede_Classic.Descuento()}");
-                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                    puma_Suede_Classic.Pagar();
-                                    Console.ReadKey();
-                                    break;
-
-                                case "5":
-                                    Console.WriteLine("________________________________________Opcion 5________________________________________\n");
-                                    Console.WriteLine($" Marca: {puma_Ralph_Sampson.Marca()} \n Modelo: {puma_Ralph_Sampson.Nombre()} \n Color: {puma_Ralph_Sampson.Color()} \n Talla: {talla[6]} \n Calidad: {calidad[3]} \n Precio: ${puma_Ralph_Sampson.Precio()} \n Descuento: {puma_Ralph_Sampson.Descuento()}");
-                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                    puma_Ralph_Sampson.Pagar();
-                                    Console.ReadKey();
-                                    break;
-
-                                case "6":
-                                    Console.WriteLine("________________________________________Opcion 6________________________________________\n");
-                                    Console.WriteLine($" Marca: {puma_Sky_Modern.Marca()} \n Modelo: {puma_Sky_Modern.Nombre()} \n Color: {puma_Sky_Modern.Color()} \n Talla: {talla[6]} \n Calidad: {calidad[1]} \n Precio: ${puma_Sky_Modern.Precio()} \n Descuento: {puma_Sky_Modern.Descuento()}");
-                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                    puma_Sky_Modern.Pagar();
-                                    Console.ReadKey();
-                                    break;
-
-                                case "7":
-                                    Console.WriteLine("________________________________________Opcion 7________________________________________\n");
-                                    Console.WriteLine($" Marca: {pumaMirageSport.Marca()} \n Modelo: {pumaMirageSport.Nombre()} \n Color: {pumaMirageSport.Color()} \n Talla: {talla[6]} \n Calidad: {calidad[4]} \n Precio: ${pumaMirageSport.Precio()} \n Descuento: {pumaMirageSport.Descuento()}");
-                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                    pumaMirageSport.Pagar();
-                                    Console.ReadKey();
-                                    break;
-
-                                case "8":
-                                    Console.WriteLine("________________________________________Opcion 8________________________________________\n");
-                                    Console.WriteLine($" Marca: {pumaCaliSport.Marca()} \n Modelo: {pumaCaliSport.Nombre()} \n Color: {pumaCaliSport.Color()} \n Talla: {talla[7]} \n Calidad: {calidad[2]} \n Precio: ${pumaCaliSport.Precio()} \n Descuento: {pumaCaliSport.Descuento()}");
-                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                    pumaCaliSport.Pagar();
-                                    Console.ReadKey();
-                                    break;
-
-                                case "9":
-                                    Console.WriteLine("________________________________________Opcion 9________________________________________\n");
-                                    Console.WriteLine($" Marca: {puma_Enzo_2.Marca()} \n Modelo: {puma_Enzo_2.Nombre()} \n Color: {puma_Enzo_2.Color()} \n Talla: {talla[7]} \n Calidad: {calidad[3]} \n Precio: ${puma_Enzo_2.Precio()} \n Descuento: {puma_Enzo_2.Descuento()}");
-                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                    puma_Enzo_2.Pagar();
-                                    Console.ReadKey();
-                                    break;
-
-                                case "10":
-                                    Console.WriteLine("________________________________________Opcion 10________________________________________\n");
-                                    Console.WriteLine($" Marca: {pumaAnzarunLite.Marca()} \n Modelo: {pumaAnzarunLite.Nombre()} \n Color: {pumaAnzarunLite.Color()} \n Talla: {talla[8]} \n Calidad: {calidad[1]} \n Precio: ${pumaAnzarunLite.Precio()} \n Descuento: {pumaAnzarunLite.Descuento()}");
-                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                    pumaAnzarunLite.Pagar();
-                                    Console.ReadKey();
-                                    break;
-
-                                case "11":
-
-                                    Console.WriteLine("¡Eligio salir! fin de las consultas");
-                                    Console.ReadKey();
-                                    Console.Clear();
-                                    break;
-
-                                default:
-                                    Console.ForegroundColor = ConsoleColor.Red;
-                                    Console.WriteLine("Opción inválida");
-                                    Console.ReadLine();
-                                    Console.Clear();
-                                    break;
-                            }
-
-                        }
-                        while (Option != "11");
-                        break;
-
-                    case "5":
                         Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine("¡Eligio salir! fin de las consultas");
                         Console.ReadKey();
                         break;
-                   
+
                     default:
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("Opción inválida");
@@ -812,8 +834,11 @@ namespace CatalogoZapatos
                         break;
                 }
 
+
             }
-            while (Option != "6");
-        }    
+            while (Option != "3");
+
+
+        }
     }
 }
