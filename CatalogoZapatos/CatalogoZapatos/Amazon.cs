@@ -45,8 +45,9 @@ namespace CatalogoZapatos
         public void pagar()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double proceso = pagar - (precio() * 0.30);
+            double proceso = precio() - (precio() * 0.30);
             double total = pagar - proceso;
+            
             if (total < 0)
             {
                 Console.WriteLine("Resultado: debe la cantidad de $" + total);
@@ -91,7 +92,7 @@ namespace CatalogoZapatos
         public void pagar()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double proceso = pagar - (precio() * 0.20);
+            double proceso = precio() - (precio() * 0.20);
             double total = pagar - proceso;
             if (total < 0)
             {
@@ -134,7 +135,7 @@ namespace CatalogoZapatos
         public void pagar()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double proceso = pagar - (precio() * 0.50);
+            double proceso = precio() - (precio() * 0.50);
             double total = pagar - proceso;
             if (total < 0)
             {
@@ -177,7 +178,7 @@ namespace CatalogoZapatos
         public void pagar()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double proceso = pagar - (precio() * 0.35);
+            double proceso = precio() - (precio() * 0.35);
             double total = pagar - proceso;
             if (total < 0)
             {
@@ -220,7 +221,7 @@ namespace CatalogoZapatos
         public void pagar()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double proceso = pagar - (precio() * 0.05);
+            double proceso = precio() - (precio() * 0.05);
             double total = pagar - proceso;
             if (total < 0)
             {
@@ -263,7 +264,7 @@ namespace CatalogoZapatos
         public void pagar()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double proceso = pagar - (precio() * 0.10);
+            double proceso = precio() - (precio() * 0.10);
             double total = pagar - proceso;
             if (total < 0)
             {
@@ -306,7 +307,7 @@ namespace CatalogoZapatos
         public void pagar()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double proceso = pagar - (precio() * 0.70);
+            double proceso = precio() - (precio() * 0.70);
             double total = pagar - proceso;
             if (total < 0)
             {
@@ -349,7 +350,7 @@ namespace CatalogoZapatos
         public void pagar()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double proceso = pagar - (precio() * 0.25);
+            double proceso = precio() - (precio() * 0.25);
             double total = pagar - proceso;
             if (total < 0)
             {
@@ -392,7 +393,7 @@ namespace CatalogoZapatos
         public void pagar()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double proceso = pagar - (precio() * 0.10);
+            double proceso = precio() - (precio() * 0.10);
             double total = pagar - proceso;
             if (total < 0)
             {
@@ -435,7 +436,7 @@ namespace CatalogoZapatos
         public void pagar()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double proceso = pagar - (precio() * 0.12);
+            double proceso = precio() - (precio() * 0.12);
             double total = pagar - proceso;
             if (total < 0)
             {
@@ -480,7 +481,7 @@ namespace CatalogoZapatos
         public void pagar()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double proceso = pagar - (precio() * 0.15);
+            double proceso = precio() - (precio() * 0.15);
             double total= pagar - proceso;
             if (total < 0)
             {
@@ -523,7 +524,7 @@ namespace CatalogoZapatos
         public void pagar()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double proceso = pagar - (precio() * 0.30);
+            double proceso = precio() - (precio() * 0.30);
             double total = pagar - proceso;
             if (total < 0)
             {
@@ -566,7 +567,7 @@ namespace CatalogoZapatos
         public void pagar()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double proceso = pagar - (precio() * 0.40);
+            double proceso = precio() - (precio() * 0.40);
             double total = pagar - proceso;
             if (total < 0)
             {
@@ -609,7 +610,7 @@ namespace CatalogoZapatos
         public void pagar()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double proceso = pagar - (precio() * 0.15);
+            double proceso = precio() - (precio() * 0.15);
             double total = pagar - proceso;
             if (total < 0)
             {
@@ -652,7 +653,7 @@ namespace CatalogoZapatos
         public void pagar()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double proceso = pagar - (precio() * 0.30);
+            double proceso = precio() - (precio() * 0.30);
             double total = pagar - proceso;
             if (total < 0)
             {
@@ -695,7 +696,7 @@ namespace CatalogoZapatos
         public void pagar()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double proceso = pagar - (precio() * 0.60);
+            double proceso = precio() - (precio() * 0.60);
             double total = pagar - proceso;
             if (total < 0)
             {
@@ -738,7 +739,7 @@ namespace CatalogoZapatos
         public void pagar()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double proceso = pagar - (precio() * 0.11);
+            double proceso = precio() - (precio() * 0.11);
             double total = pagar - proceso;
             if (total < 0)
             {
@@ -781,7 +782,7 @@ namespace CatalogoZapatos
         public void pagar()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double proceso = pagar - (precio() * 0.05);
+            double proceso = precio() - (precio() * 0.05);
             double total = pagar - proceso;
             if (total < 0)
             {
@@ -824,7 +825,7 @@ namespace CatalogoZapatos
         public void pagar()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double proceso = pagar - (precio() * 0.50);
+            double proceso = precio() - (precio() * 0.50);
             double total = pagar - proceso;
             if (total < 0)
             {
@@ -867,7 +868,7 @@ namespace CatalogoZapatos
         public void pagar()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double proceso = pagar - (precio() * 0.10);
+            double proceso = precio() - (precio() * 0.10);
             double total = pagar - proceso;
             if (total < 0)
             {
@@ -912,7 +913,7 @@ namespace CatalogoZapatos
         public void pagar()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double proceso = pagar - (precio() * 0.20);
+            double proceso = precio() - (precio() * 0.20);
             double total = pagar - proceso;
             if (total < 0)
             {
@@ -955,7 +956,7 @@ namespace CatalogoZapatos
         public void pagar()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double proceso = pagar - (precio() * 0.10);
+            double proceso = precio() - (precio() * 0.10);
             double total = pagar - proceso;
 
             if (total < 0)
@@ -999,7 +1000,7 @@ namespace CatalogoZapatos
         public void pagar()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double proceso = pagar - (precio() * 0.30);
+            double proceso = precio() - (precio() * 0.30);
             double total = pagar - proceso;
             if (total < 0)
             {
@@ -1042,7 +1043,7 @@ namespace CatalogoZapatos
         public void pagar()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double proceso = pagar - (precio() * 0.30);
+            double proceso = precio() - (precio() * 0.30);
             double total = pagar - proceso;
             if (total < 0)
             {

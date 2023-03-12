@@ -14,3 +14,11 @@ C:\Users\USUARIO\Documents\GitHub\Practica4_Mayerli-Cristian\CatalogoZapatos\Cat
 C:\Users\USUARIO\Documents\GitHub\Practica4_Mayerli-Cristian\CatalogoZapatos\CatalogoZapatos\obj\Debug\CatalogoZapatos.csproj.CoreCompileInputs.cache
 C:\Users\USUARIO\Documents\GitHub\Practica4_Mayerli-Cristian\CatalogoZapatos\CatalogoZapatos\obj\Debug\CatalogoZapatos.exe
 C:\Users\USUARIO\Documents\GitHub\Practica4_Mayerli-Cristian\CatalogoZapatos\CatalogoZapatos\obj\Debug\CatalogoZapatos.pdb
+C:\Users\mmaye\Documents\GitHub\Practica4_Mayerli-Cristian\CatalogoZapatos\CatalogoZapatos\bin\Debug\CatalogoZapatos.exe.config
+C:\Users\mmaye\Documents\GitHub\Practica4_Mayerli-Cristian\CatalogoZapatos\CatalogoZapatos\bin\Debug\CatalogoZapatos.exe
+C:\Users\mmaye\Documents\GitHub\Practica4_Mayerli-Cristian\CatalogoZapatos\CatalogoZapatos\bin\Debug\CatalogoZapatos.pdb
+C:\Users\mmaye\Documents\GitHub\Practica4_Mayerli-Cristian\CatalogoZapatos\CatalogoZapatos\obj\Debug\CatalogoZapatos.csproj.AssemblyReference.cache
+C:\Users\mmaye\Documents\GitHub\Practica4_Mayerli-Cristian\CatalogoZapatos\CatalogoZapatos\obj\Debug\CatalogoZapatos.csproj.SuggestedBindingRedirects.cache
+C:\Users\mmaye\Documents\GitHub\Practica4_Mayerli-Cristian\CatalogoZapatos\CatalogoZapatos\obj\Debug\CatalogoZapatos.csproj.CoreCompileInputs.cache
+C:\Users\mmaye\Documents\GitHub\Practica4_Mayerli-Cristian\CatalogoZapatos\CatalogoZapatos\obj\Debug\CatalogoZapatos.exe
+C:\Users\mmaye\Documents\GitHub\Practica4_Mayerli-Cristian\CatalogoZapatos\CatalogoZapatos\obj\Debug\CatalogoZapatos.pdb
